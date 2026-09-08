@@ -21,3 +21,7 @@ ugc-app/templates/customers/*.json
 ugc-app/templates/out/
 ugc-app/templates/raw/
 __pycache__/
+
+# 2026-09-08: settings.local.json สะสม permission rules ที่มี token/รหัสผ่านจริง
+# (Claude Code เขียนเพิ่มเองอัตโนมัติ) — ห้าม track เด็ดขาด
+.claude/settings.local.json
