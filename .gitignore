@@ -1,0 +1,23 @@
+# ข้อมูลสำรองจาก VPS + สคริปต์ที่มีรหัสผ่าน — ห้าม commit เด็ดขาด
+hermes-backups/
+
+# 2026-09-08: docs/ และ VPS/config-backup/ มี API token จริงฝังอยู่ (พบว่า Hostinger
+# token ของ VPS 1637353 หลุดขึ้น public GitHub ไปแล้วผ่านไฟล์นี้) — ย้ายไฟล์จริงออกไปไว้ที่
+# D:\ClaudeCodeWorkSpace-docs\ นอก repo แล้ว บรรทัดนี้กันไว้เผื่อใครสร้าง docs/ หรือ VPS/
+# ขึ้นมาใหม่ในนี้โดยไม่ตั้งใจ
+docs/
+VPS/
+*-Credential.txt
+*Credential*.txt
+
+# ไฟล์ที่มี credential
+.env
+*.env
+!*.env.example
+
+# ClipCraft — ค่าประจำลูกค้า (มีรหัสผ่าน/secret) และไฟล์ที่ประกอบออกมาแล้ว
+ugc-app/templates/customers/*.json
+!ugc-app/templates/customers/_example.json
+ugc-app/templates/out/
+ugc-app/templates/raw/
+__pycache__/
