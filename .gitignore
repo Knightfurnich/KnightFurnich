@@ -25,3 +25,10 @@ __pycache__/
 # 2026-09-08: settings.local.json สะสม permission rules ที่มี token/รหัสผ่านจริง
 # (Claude Code เขียนเพิ่มเองอัตโนมัติ) — ห้าม track เด็ดขาด
 .claude/settings.local.json
+
+# 2026-10-04: โค้ด Knight Basins อยู่ใน repo ส่วนตัวของมันเอง (repo ส่วนตัว ไม่เปิดสาธารณะ)
+# โฟลเดอร์ checkout/worktree ของมันวางอยู่ในนี้ แต่ repo นี้เป็น PUBLIC — กันไม่ให้ git add . ลากโค้ด
+# และ node_modules ของมันขึ้นสาธารณะโดยไม่ตั้งใจ (ตรวจแล้วตอนเพิ่มบรรทัดนี้: ไม่มีไฟล์ไหนถูก track)
+KnightBasins-*/
+KnightDesign-*/
+node_modules/
